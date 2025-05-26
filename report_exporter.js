@@ -81,7 +81,7 @@ function generateAppleApiToken() {
  * @param {object} payload - Đối tượng payload cho yêu cầu báo cáo.
  */
 async function fetchAppleSearchAdsReport(authToken, payload) {
-    const apiUrl = 'https://api.searchads.apple.com/api/v4/reports/campaigns';
+    const apiUrl = 'https://api.searchads.apple.com/api/v5/reports/campaigns;
     console.log(`Đang lấy báo cáo từ Apple Search Ads... Từ ${payload.startTime} đến ${payload.endTime}`);
 
     const headers = {
