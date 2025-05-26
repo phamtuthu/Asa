@@ -2,18 +2,18 @@
   "name": "apple-search-ads-to-google-sheets",
   "version": "1.0.0",
   "description": "Xuất báo cáo Apple Search Ads sang Google Sheets",
-  "main": "report_exporter.js",
+  "main": "app.js",
   "scripts": {
     "start": "node report_exporter.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "axios": "^1.6.8", // Hoặc phiên bản mới nhất
-    "dotenv": "^16.4.5", // Để dễ dàng quản lý biến môi trường khi phát triển cục bộ
-    "googleapis": "^137.1.0", // Hoặc phiên bản mới nhất
-    "jsonwebtoken": "^9.0.2" // Hoặc phiên bản mới nhất
+    "axios": "^1.6.8",
+    "dotenv": "^16.4.5",
+    "googleapis": "^137.1.0",
+    "jsonwebtoken": "^9.0.2"
   },
   "engines": {
-    "node": ">=18.0.0" // Chỉ định phiên bản Node.js, Railway sẽ dùng bản này
+    "node": ">=18.0.0"
   }
 }
