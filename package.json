@@ -1,19 +1,19 @@
 {
-  "name": "uneven-dawn-wolf",
+  "name": "apple-search-ads-to-google-sheets",
   "version": "1.0.0",
-  "description": "App to handle Bitrix24 events",
-  "main": "app.js",
+  "description": "Xuất báo cáo Apple Search Ads sang Google Sheets",
+  "main": "report_exporter.js",
+  "scripts": {
+    "start": "node report_exporter.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
-    "express": "^4.17.1",
-    "body-parser": "^1.19.0",
-    "dotenv": "^16.0.3",
-    "axios": "^1.4.0",
-    "node-cron": "^3.0.0"
+    "axios": "^1.6.8", // Hoặc phiên bản mới nhất
+    "dotenv": "^16.4.5", // Để dễ dàng quản lý biến môi trường khi phát triển cục bộ
+    "googleapis": "^137.1.0", // Hoặc phiên bản mới nhất
+    "jsonwebtoken": "^9.0.2" // Hoặc phiên bản mới nhất
   },
   "engines": {
-    "node": ">=10.0.0"
-  },
-  "scripts": {
-    "start": "node app.js"
+    "node": ">=18.0.0" // Chỉ định phiên bản Node.js, Railway sẽ dùng bản này
   }
 }
