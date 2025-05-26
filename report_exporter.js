@@ -7,6 +7,11 @@ const axios = require('axios');
 const { google } = require('googleapis');
 
 // === CẤU HÌNH ===
+console.log("Đang đọc biến môi trường từ Railway...");
+console.log("APPLE_CLIENT_ID:", process.env.APPLE_CLIENT_ID ? "Có giá trị" : "Thiếu hoặc rỗng");
+console.log("APPLE_TEAM_ID:", process.env.APPLE_TEAM_ID ? "Có giá trị" : "Thiếu hoặc rỗng");
+console.log("APPLE_KEY_ID:", process.env.APPLE_KEY_ID ? "Có giá trị" : "Thiếu hoặc rỗng");
+console.log("APPLE_PRIVATE_KEY (trước khi xử lý):", process.env.APPLE_PRIVATE_KEY ? "Có giá trị" : "Thiếu hoặc rỗng");
 // Đọc từ biến môi trường
 const APPLE_CLIENT_ID = process.env.APPLE_CLIENT_ID;
 const APPLE_TEAM_ID = process.env.APPLE_TEAM_ID; // Organization ID cho API v4
