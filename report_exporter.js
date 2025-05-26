@@ -85,10 +85,10 @@ async function fetchAppleSearchAdsReport(authToken, payload) {
     console.log(`Đang lấy báo cáo từ Apple Search Ads... Từ ${payload.startTime} đến ${payload.endTime}`);
 
     const headers = {
-        'Authorization': `Bearer ${authToken}`,
-        'X-Apple-Cloud- Verwaltungs-Team-ID': APPLE_TEAM_ID, // Hoặc 'orgId' nếu API yêu cầu, kiểm tra docs
-        'Content-Type': 'application/json'
-    };
+    'Authorization': `Bearer ${authToken}`,
+    'X-Apple-Org-Id': APPLE_TEAM_ID, // Sử dụng header này cho Organization ID (Team ID)
+    'Content-Type': 'application/json'
+};
 
     try {
         const response = await axios.post(apiUrl, payload, { headers });
