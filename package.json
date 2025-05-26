@@ -2,7 +2,7 @@
   "name": "apple-search-ads-to-google-sheets",
   "version": "1.0.0",
   "description": "Xuất báo cáo Apple Search Ads sang Google Sheets",
-  "main": "app.js",
+  "main": "report_exporter.js",
   "scripts": {
     "start": "node report_exporter.js",
     "test": "echo \"Error: no test specified\" && exit 1"
